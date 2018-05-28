@@ -53,7 +53,7 @@ def main():
 	Instr_Path=str(options.Instr_Path)
 	Des_Path = ''
 	if (Controller_Name == "None") or (TestRun_Number == "None") or (Instr_Path == "None"):
-		print("Usage-> python FindMethods.py -C <Controller Name> -T <TestRun number> -I <InstrumentationProfilePath>")
+		print("Usage-> python Gen_MethodMonitor.py -C <Controller Name> -T <TestRun number> -I <InstrumentationProfilePath>")
 	else:
 		Des_Path = os.path.join("/home/netstorm/" + Controller_Name + "/logs/TR" + TestRun_Number)
 		if not os.path.exists(Des_Path):
