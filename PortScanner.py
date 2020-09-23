@@ -2,8 +2,8 @@ import optparse
 import socket
 from socket import * 
 def connScan(tgtHost, tgtPort):
-   try:
-	connSkt = socket(AF_INET, SOCK_STREAM)
+    try:
+        connSkt = socket(AF_INET, SOCK_STREAM)
 	connSkt.connect((tgtHost, tgtPort))
 	connSkt.send('ViolentPython\r\n')
 	results = connSkt.recv(100)
@@ -14,8 +14,8 @@ def connScan(tgtHost, tgtPort):
 	print '[-]%d tcp closed' % tgtPort
 	
 def portScan(tgtHost, tgtPorts):
-   try:
-	tgtIP = gethostbyname(tgtHost)
+    try:
+        tgtIP = gethostbyname(tgtHost)
    except:
 	print "[-] Cannot resolve '%s' : Unknown host " %tgtHost
 	return
