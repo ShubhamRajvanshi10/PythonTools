@@ -10,7 +10,7 @@ def connScan(tgtHost, tgtPort):
 	print '[+] %d tcp open' % tgtPort
 	print '[+]' + str(results)
 	connSkt.close()
-  except:
+    except:
 	print '[-]%d tcp closed' % tgtPort
 	
 def portScan(tgtHost, tgtPorts):
