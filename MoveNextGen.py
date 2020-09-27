@@ -4,3 +4,6 @@ with open ('uniqDll.txt', 'r') as Dl:
         rec = line.strip()
 	    NameWithoutDll , extra = rec.split('.dll')
 	    print rec + "|" + NameWithoutDll + ";<.*>d__.*|MoveNext|0|0"
+        
+        #Comment
+#Comment2
